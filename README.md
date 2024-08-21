@@ -3,6 +3,7 @@
 Welcome to the ONTPro repository! This project is a comprehensive pipeline designed to process and analyze sequencing data generated using Oxford Nanopore Technologies (ONT). The pipeline is optimized for high-quality assembly and polishing of genomic sequences, incorporating multiple tools to ensure accuracy and efficiency in handling ONT data.
 
 **2. Introduction**
+
 This pipeline is tailored for users who need to process and analyze large-scale ONT sequencing data, particularly in the context of microbial genomics. ONTPro leverages several bioinformatics tools, including Flye, Racon, Medaka, and Minimap2, to assemble and polish genomic sequences. This pipeline is designed to be robust, handling various input configurations and providing flexibility in specifying parameters such as the Medaka model.
 
 **3. Features**
