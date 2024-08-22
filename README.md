@@ -3,9 +3,13 @@
 Welcome to the ONTPro repository! This project is a comprehensive pipeline designed to process and analyze sequencing data generated using Oxford Nanopore Technologies (ONT). The pipeline is optimized for high-quality assembly and polishing of genomic sequences, incorporating multiple tools to ensure accuracy and efficiency in handling ONT data.ONTPro leverages several bioinformatics tools to assemble and polish genomic sequences. The script represents a complete pipeline: it takes raw ONT reads as input and outputs polished contigs, along with read quality statistics and depth coverage statistics.
 
 The pipeline comprises several key processes:
+
 Concatenation: Merges multiple FASTQ files into a single file for downstream analysis.
+
 Assembly: Assembles the genome from ONT reads using Flye.
+
 Polishing: Refines the assembly with Racon and Medaka to improve accuracy.
+
 Alignment: Aligns assembled reads to generate a PAF file for further analysis.
 
 ## Installation
