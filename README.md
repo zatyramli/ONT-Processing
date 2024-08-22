@@ -49,9 +49,10 @@ nextflow run ONTPro.nf --fastq /path/to/fastq_files --medaka_model r941_min_high
 ```markdown
 ## Parameters
 
-- `--fastq_path` : Path to the input FASTQ files.
-- `--ref_fasta` : Path to the reference FASTA file.
+- `--fastq` : Path to the input FASTQ files.
 - `--medaka_model` : Specify the Medaka model to use (e.g., `r941_min_high_g360`).
+- `--references` : Path to the reference FASTA file.
+- `--outdir` : Path for output directory.
 ```
 
 Refer to the [Medaka documentation](https://github.com/nanoporetech/medaka) for details on each model.
