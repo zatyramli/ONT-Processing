@@ -39,7 +39,7 @@ To set up the ONTPro pipeline, you need to have [Miniconda](https://docs.anacond
     ```
 
 
-**Usage**
+## Usage
 
 The pipeline can be executed using Nextflow, and the following command provides an example of how to run the pipeline:
 ```bash
@@ -56,21 +56,7 @@ nextflow run ONTPro.nf --fastq /path/to/fastq_files --medaka_model r941_min_high
 
 Refer to the [Medaka documentation](https://github.com/nanoporetech/medaka) for details on each model.
 
-This command will concatenate FASTQ files, assemble the genome using Flye, polish the assembly with Racon and Medaka, and align the reads to reference sequences using Minimap2. The output will include all intermediate and final files generated during the process.
-
-**6. Pipeline Overview**
-
-The pipeline comprises several key processes:
-Concatenation: Merges multiple FASTQ files into a single file for downstream analysis.
-Assembly: Assembles the genome from ONT reads using Flye.
-Polishing: Refines the assembly with Racon and Medaka to improve accuracy.
-Alignment: Aligns reads to the assembled genome to generate a PAF file for further analysis.
-
-**Troubleshooting**
-
-If you encounter issues during installation or execution, please ensure that all dependencies are correctly installed and that the Conda environment is properly activated. For specific errors related to missing packages or library incompatibilities, refer to the Conda documentation or the Issues section of this repository.
-
-**9. Contributing**
+## Contributing
 
 Contributions to this project are welcome! Please fork the repository and submit a pull request with your proposed changes. Whether it’s bug fixes, feature enhancements, or documentation improvements, your input is highly valued.
 
@@ -78,7 +64,7 @@ Contributions to this project are welcome! Please fork the repository and submit
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-**11. Acknowledgments**
+## Acknowledgments
 
 This pipeline was developed as part of a research initiative at Universiti Sains Malaysia, with support from the Emerging Infectious Disease (EID) research program. Special thanks to all contributors and collaborators who provided invaluable feedback during the development process.
 
