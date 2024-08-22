@@ -1,4 +1,4 @@
-##ONTPro: An Oxford Nanopore Sequencing Pipeline
+## ONTPro: An Oxford Nanopore Sequencing Pipeline
 
 Welcome to the ONTPro repository! This project is a comprehensive pipeline designed to process and analyze sequencing data generated using Oxford Nanopore Technologies (ONT). The pipeline is optimized for high-quality assembly and polishing of genomic sequences, incorporating multiple tools to ensure accuracy and efficiency in handling ONT data.ONTPro leverages several bioinformatics tools to assemble and polish genomic sequences. The script represents a complete pipeline: it takes raw ONT reads as input and outputs polished contigs, along with read quality statistics and depth coverage statistics.
 
