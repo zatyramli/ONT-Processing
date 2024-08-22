@@ -12,6 +12,8 @@ Polishing: Refines the assembly with Racon and Medaka to improve accuracy.
 
 Alignment: Aligns assembled reads to generate a PAF file for further analysis.
 
+Depth Coverage Analysis: Analyzes the depth of coverage across the assembled genome to assess the completeness and consistency of the assembly.
+
 ## Installation
 
 To set up the ONTPro pipeline, you need to have [Miniconda](https://docs.anaconda.com/miniconda/miniconda-install/) installed. The following steps will guide you through the installation process:
