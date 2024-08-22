@@ -1,4 +1,4 @@
-**ONTPro: An Oxford Nanopore Sequencing Pipeline**
+##ONTPro: An Oxford Nanopore Sequencing Pipeline
 
 Welcome to the ONTPro repository! This project is a comprehensive pipeline designed to process and analyze sequencing data generated using Oxford Nanopore Technologies (ONT). The pipeline is optimized for high-quality assembly and polishing of genomic sequences, incorporating multiple tools to ensure accuracy and efficiency in handling ONT data.ONTPro leverages several bioinformatics tools to assemble and polish genomic sequences. The script represents a complete pipeline: it takes raw ONT reads as input and outputs polished contigs, along with read quality statistics and depth coverage statistics.
 
@@ -37,8 +37,18 @@ To set up the ONTPro pipeline, you need to have [Miniconda](https://docs.anacond
 
 The pipeline can be executed using Nextflow, and the following command provides an example of how to run the pipeline:
 ```bash
-nextflow run assembly.nf --fastq_path /path/to/fastq_files --ref_fasta /path/to/reference.fasta --medaka_model r941_min_high_g360
+nextflow run ONTPro.nf --fastq /path/to/fastq_files --medaka_model r941_min_high_g360 --references /path/to/reference_directory --outdir /path/to/output_directory
 ```
+
+```markdown
+## Parameters
+
+- `--fastq_path` : Path to the input FASTQ files.
+- `--ref_fasta` : Path to the reference FASTA file.
+- `--medaka_model` : Specify the Medaka model to use (e.g., `r941_min_high_g360`).
+```
+
+Refer to the [Medaka documentation](https://github.com/nanoporetech/medaka) for details on each model.
 
 This command will concatenate FASTQ files, assemble the genome using Flye, polish the assembly with Racon and Medaka, and align the reads to reference sequences using Minimap2. The output will include all intermediate and final files generated during the process.
 
